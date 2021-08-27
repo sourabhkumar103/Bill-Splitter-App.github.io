@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill split & tip Cal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script src = "index.js"></script>
+    <div class="container">
+        <h1>Bill Splitter & Tip Calculator</h1>
+        <form action="">
+            <div class="control">
+               <p>Enter Total Bill</p>
+                  <p class="input">
+                  ₹
+                     <input type="number" name="" id="totalBill" placeholder="">
+                 </p>
+            </div>
+            <div class="control">
+                <p>Enter tip (in %age)</p>
+                <p class="input">
+                %
+                   <input type="number" name="" id="tipPercent" placeholder="">
+               </p>
+            </div>
+      </form>
+          <p>Split into No.of Persons</p>
+          <input type="number" name="" id="split" > 
+          <br />
+         <button id="calculate" onclick="Cal()">Calculate</button>
+         <div class="totalTip">
+         <p>Total Per Person</p>
+          <p class="tip">₹<span id="tip">0.00</span> </p>
+        </div>
+   </div>
+</body>
